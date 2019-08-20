@@ -15,7 +15,7 @@ public class IndexController {
     @Autowired
     UserMapper userMapper;
 
-    //        @RequestMapping("/")
+//            @RequestMapping("/")
 //    public String hello(@RequestParam(name = "name",required=false) String name, Model model) {
 //        model.addAttribute("name",name);
 //        return "index";
