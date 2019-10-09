@@ -4,7 +4,6 @@ import com.cyclerunner.nevermore.model.User;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
-import org.springframework.web.bind.annotation.RequestParam;
 
 @Mapper
 public interface UserMapper {
@@ -13,5 +12,5 @@ public interface UserMapper {
     void insert(User user);
 
     @Select("select * from user where token = #{token}")
-    User findByToken( String token);
+    User findByToken(String token);
 }
