@@ -9,15 +9,11 @@
 
 [Spring-database](https://docs.spring.io/spring-boot/docs/2.0.0.RC1/reference/htmlsingle/#boot-features-embedded-database-support)
 
-## 脚本
-```sql
-   create table USER
-   (
-   	ID int primary key,
-   	NAME VARCHAR(100),
-   	ACCOUNT_ID VARCHAR(100),
-   	TOKEN VARCHAR(100),
-   	GMT_CREATE BIGINT,
-   	GMT_MODIFIED BIGINT
-   );
+[Flyway](https://flywaydb.org)
+
+[Lombok](https://projectlombok.org)
+
+## Terminal 命令
+```bash
+   mvn flyway:migrate
 ```
